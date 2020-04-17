@@ -50,6 +50,13 @@ function createCharacter() {
     let c = color(255, 69, 0);
     fill(c);
     circle(mouseX, mouseY, 20);
+  } else {
+    moveToPositionX = floor(mouseX);
+    moveToPositionY = floor(mouseY);
+    console.log(
+      `X to move to: ${moveToPositionX} \nY to move to: ${moveToPositionY}`
+    );
+    set();
   }
 }
 
